@@ -13,7 +13,7 @@ export function toast(msg) {
     dom.style.left = '50%';
     dom.style.top = '50%';
     dom.style.transform = 'translate(-50%,-50%)';
-    dom.style.background = 'rgba(0, 0, 0, .6)';
+    dom.style.background = 'rgba(0, 0, 0, .5)';
     dom.style.color = '#fff';
     dom.style.textAlign = 'center';
     dom.style.zIndex = '2021';
