@@ -15,13 +15,13 @@ export function ajaxFunc(method, url, data, callback, flag) {
         }
         data = tempArr.join('&')
     }
-    if (['GET', 'DELETE'].includes(method)) {
+    xhr.timeout=10000;
+    if (['GET', 'DELETE', 'HEAD'].includes(method)) {
         url += ('?' + data);
         xhr.open(method, url, flag);
         xhr.setRequestHeader('token', localStorage.token);
         xhr.send();
-
-    } else if (['POST', 'PUT'].includes(method)) {
+    } else if (['POST', 'PUT', 'PATCH'].includes(method)) {
         xhr.open(method, url, flag);
         xhr.setRequestHeader('token', localStorage.token);
         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
