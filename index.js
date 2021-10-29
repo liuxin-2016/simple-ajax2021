@@ -1,18 +1,24 @@
 
-import { intercept } from './intercept';
+import { intercept } from './utils/intercept';
 
 export default class Http {
-    static get(url, params) {
-        return intercept('GET', url, params);
+    static async get(url, params) {
+        return await intercept('GET', url, params);
     }
     static async post(url, params) {
-        return intercept('POST', url, params)
+        return await intercept('POST', url, params)
     }
     static async put(url, params) {
-        return intercept('PUT', url, params)
+        return await intercept('PUT', url, params)
     }
     static async delete(url, params) {
-        return intercept('DELETE', url, params)
+        return await intercept('DELETE', url, params)
+    }
+    static async delete(url, params) {
+        return await intercept('PATCH', url, params)
+    }
+    static async delete(url, params) {
+        return await intercept('HEAD', url, params)
     }
 }
 

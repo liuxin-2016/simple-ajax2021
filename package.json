@@ -1,10 +1,11 @@
 {
   "name": "simple-ajax2021",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ajax简单封装",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit":"git add . && git commit -m 'update' && git push && npm publish"
   },
   "author": "",
   "license": "ISC"
