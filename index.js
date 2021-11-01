@@ -14,10 +14,10 @@ export default class Http {
     static async delete(url, params) {
         return await intercept('DELETE', url, params)
     }
-    static async delete(url, params) {
+    static async patch(url, params) {
         return await intercept('PATCH', url, params)
     }
-    static async delete(url, params) {
+    static async head(url, params) {
         return await intercept('HEAD', url, params)
     }
 }
