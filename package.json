@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit":"git add . && git commit -m 'update' && git push && npm publish"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuxin-2016/simple-ajax2021.git"
+  },
   "author": "",
   "license": "ISC"
 }
