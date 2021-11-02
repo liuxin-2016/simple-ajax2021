@@ -1,5 +1,5 @@
 export function toast(msg) {
-    let dom = document.createElement('div');
+    var dom = document.createElement('div');
     dom.innerHTML = msg;
     dom.style.color = '#333';
     dom.style.padding = '6px 10px';
@@ -18,5 +18,5 @@ export function toast(msg) {
     dom.style.textAlign = 'center';
     dom.style.zIndex = '2021';
     document.body.appendChild(dom);
-    setTimeout(() => document.body.removeChild(dom), 3000)
+    setTimeout(function () { document.body.removeChild(dom) }, 3000)
 }
